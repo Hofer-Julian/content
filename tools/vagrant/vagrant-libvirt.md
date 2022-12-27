@@ -52,7 +52,8 @@ To revert for your box to `qemu://system`, you can put something like the follow
 Vagrant.configure("2") do |config|
   config.vm.provider :libvirt do |libvirt|
     # Use QEMU session instead of system connection
-    libvirt.qemu_use_session = true
+    libvirt.qemu_use_session = false
+end
 
 ```
 
