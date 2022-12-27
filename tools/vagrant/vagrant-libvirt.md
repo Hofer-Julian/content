@@ -21,7 +21,7 @@ $ sudo dnf install @vagrant
 Afterwards make sure that libvirt daemon is running and that you have `kvm` module loaded in the kernel:
 
 ```
-$ sudo systemctl enable libvirtd
+$ sudo systemctl enable --now libvirtd
 $ lsmod | grep kvm
 kvm_intel             167936  3
 kvm                   499712  1 kvm_intel
